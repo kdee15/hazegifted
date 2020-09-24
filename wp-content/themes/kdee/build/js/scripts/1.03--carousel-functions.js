@@ -22,6 +22,7 @@ function initCarouselFunctions() {
       $('.classname').removeClass("owl-carousel");
     }
   }
+
   $(document).ready(function(e) {
     owlInitialize();
   });

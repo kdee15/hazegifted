@@ -152,7 +152,7 @@ $(window).on('load', function() {
   // LOAD FUNCTIONS ---------------------------------------
 
   initToggleFunctions();
-  initCarouselFunctions();
+  // initCarouselFunctions();
   initEqualheightsFunctions();
   initScrollIntoView();
 
@@ -334,6 +334,7 @@ function initCarouselFunctions() {
       $('.classname').removeClass("owl-carousel");
     }
   }
+
   $(document).ready(function(e) {
     owlInitialize();
   });

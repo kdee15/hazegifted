@@ -2,6 +2,27 @@
 
 // A. +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+.m-stream-list { display: flex; width: 100%; justify-content: space-between; list-style-type: none;
+  .m-stream-element {
+    .a-stream-link { display: flex; align-items: center; text-decoration: none!important;
+      .m-icon { @include aspect-ratio(60px, 100%); display: block;
+        svg { width: 100%!important; height: 100%!important; @include position(absolute, 0);
+          path, polygon { fill: black; stroke: none;
+            &.fill {  fill: black; }
+            &.clear {  fill: none; }
+          }
+        }
+      }
+      .a-link-text { margin-left: 10px; color: black; }
+      &:hover {
+        .m-icon {
+          path, polygon { fill: white; transition: 0.3s; }
+        }
+        .a-link-text { color: white; transition: 0.3s; }
+      }
+    }
+  }
+}
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

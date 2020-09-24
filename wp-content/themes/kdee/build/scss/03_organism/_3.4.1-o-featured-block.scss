@@ -4,7 +4,18 @@
 
 // A.1. GENERAL CARDS -------------------------------------------------------------------------------------------------
 
-.page-template-template-holding-page {}
+.o-block-featured { padding: 60px 0; background: black;
+  .m-col-player {
+    .spotify-feed { height: 100%;
+      .custom-html-widget { height: 100%;
+        iframe { width: 100%!important; height: 100%!important; }
+      }
+    }
+  }
+  .m-col-image { align-self: center;
+    img { max-width: 100%; height: auto; }
+  }
+}
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
@@ -14,7 +25,16 @@
 
 @media ($md-dn) {}
 
-@media ($sm-dn) {}
+@media ($sm-dn) {
+
+  .o-block-featured { padding: 0;
+    .m-col-player { order: 2; @include aspect-ratio(100%, 100%);
+      .spotify-feed { @include position(absolute, 0); }
+    }
+    .m-col-image { order: 1; padding-right: 0; padding-left: 0; }
+  }
+
+}
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

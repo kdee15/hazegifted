@@ -58,14 +58,60 @@ add_action( 'widgets_init', 'arphabet_widgets_init' );
 
 // A.1.0.2. Twitter Widget
 
+// A.1.0.3. Spotify Widget
+
+function spotify_widget_widgets_init() {
+
+  register_sidebar( array(
+    'name' => 'spotify widget',
+    'id' => 'spotify_widget',
+    'before_widget' => '<div class="spotify-feed">',
+    'after_widget' => '</div>',
+  ));
+}
+
+add_action( 'widgets_init', 'spotify_widget_widgets_init' );
+
+// A.1.0.3. END
+
 // A.3 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// A.4 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// A.4 CUSTOM CONTENT +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.4.1. HOMEPAGE CAROUSEL ---------------------------------------------------------------------------------------
+
+function featuredAlbum() {
+  $labels = array(
+    'Title'              => _x( 'Featured Album', 'post type general name' ),
+    'singular_name'      => _x( 'Album Pics', 'post type singular name' ),
+    'add_new'            => _x( 'Add New', 'Album Pic' ),
+    'add_new_item'       => __( 'Add New Album Pic' ),
+    'edit_item'          => __( 'Edit Album' ),
+    'new_item'           => __( 'New Album Pic' ),
+    'all_items'          => __( 'All Album Pics' ),
+    'view_item'          => __( 'View Album' ),
+    'parent_item_colon'  => '',
+    'menu_name'          => 'Featured Album'
+  );
+
+  $args = array(
+    'labels'         => $labels,
+    'description'   => 'A list of Featured Album',
+    'public'        => true,
+    'menu_position' => 3,
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+    'has_archive'   => true,
+
+  );
+
+  register_post_type( 'featuredAlbum', $args );
+}
+
+add_action( 'init', 'featuredAlbum' );
+
+// A.4.1. End -----------------------------------------------------------------------------------------------------
 
 // A.4 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// A.5 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 
 // A.X BREADCRUMBS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

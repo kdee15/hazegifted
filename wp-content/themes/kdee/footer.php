@@ -1,22 +1,13 @@
 <!-- C.2.8. FOOTEND OF PAGE -->
 
-<!--<a class="btn-default btn-back" href="javascript:history.back(-1);" >BACK</a>-->
-
 <footer class="o-footer">
     
     <div class="container">
       <div class="row">
 
-        <aside class="col-12 col-md-4">
-
-          <h6>Contact Details</h6>
-          <p>Fax: 086 5020 150<br>
-            <a href="mailto:info@mvbc.co.za">info@mvbc.co.za</a>
-          </p>
-        </aside>
+        <aside class="col-12 col-md-4"></aside>
 
         <aside class="col-12 col-md-4">
-          <h6>Social Media</h6>
           <ul class="social-media">
             <li>
               <a href="http://www.twitter.com/mvbcsa" target="_blank">
@@ -37,19 +28,10 @@
           </ul>
         </aside>
 
-        <aside class="col-12 col-md-4">
-
-          <h6>Banking Details</h6>
-          <p>Montana Vikings Basketball Club<br/>
-          Standard Bank<br/>
-          Rondebosch<br/>
-          Code: 025 009<br/>
-          Acc No: 374 286 027<br/>
-            Savings Acc</p>
-        </aside>
+        <aside class="col-12 col-md-4"></aside>
       </div>
 
-      <p class="col-12 a-credits">&copy; Copyright 2017. Site by <a href="http://www.kdee.co.za" target="_blank">KDee</a>.</p>
+      <p class="col-12 a-credits">&copy; Copyright 2020. Site by <a href="http://www.kdee.co.za" target="_blank">KDee</a>.</p>
         
     </div>
     

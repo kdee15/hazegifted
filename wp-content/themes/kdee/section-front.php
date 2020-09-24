@@ -1,7 +1,14 @@
-<section class="o-header o-home-header h-100">
+<section class="o-block-featured">
 
-  <!-- C.1. PAGE HEADER --------------------------------- -->
-  <?php get_template_part( 'inc/svg--logo' ); ?>
-  <!-- C.1. END ----------------------------------------- -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 m-col-player">
+        <?php dynamic_sidebar( 'spotify_widget' ); ?>
+      </div>
+      <div class="col-12 col-md-6 m-col-image">
+        <?php get_template_part( 'section-album' ); ?>
+      </div>
+    </div>
+  </div>
 
 </section>

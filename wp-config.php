@@ -24,9 +24,11 @@ define('DB_NAME', 'haze');
 
 /** MySQL database username */
 define('DB_USER', 'root');
+//define( 'DB_USER', 'dbuserstage' );
 
 /** MySQL database password */
 define('DB_PASSWORD', 'v1k1ng515');
+//define( 'DB_PASSWORD', 'klingon.Beast187' );
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

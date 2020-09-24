@@ -10,6 +10,6 @@ $(window).on('load', function() {
   // LOAD FUNCTIONS ---------------------------------------
 
   initToggleFunctions();
-  initCarouselFunctions();
+  // initCarouselFunctions();
   initEqualheightsFunctions();
   initScrollIntoView();

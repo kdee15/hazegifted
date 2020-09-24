@@ -19,7 +19,6 @@ get_header();
 
   <?php get_template_part( 'inc/navigation-home' ); ?>
 
-
   <!-- C.1. END --------------------------------------- -->
 
   <main class="p-main">
@@ -27,14 +26,13 @@ get_header();
     <!-- C.1. PAGE HEADER ------------------------------- -->
 
     <?php get_template_part( 'section-front' ); ?>
+    <?php get_template_part( 'section-streams' ); ?>
 
     <!-- C.1. END --------------------------------------- -->
 
     <!-- C.2. SECTIONS -------------------------------- -->
 
     <?php get_template_part( 'section-feeds' ); ?>
-
-    <?php get_template_part( 'section-blog' ); ?>
 
     <!-- C.2. END ------------------------------------- -->
 

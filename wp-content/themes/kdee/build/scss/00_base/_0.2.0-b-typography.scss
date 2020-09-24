@@ -29,6 +29,8 @@ $gow          : gow, helvetica, arial, sans-serif;
 
 // font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
 
+// VIEW PORTS
+
 $view-min-xs:    320;
 $view-max-xs:    767;
 
@@ -37,6 +39,23 @@ $view-max-sm:    991;
 
 $view-min-md:    992;
 $view-max-md:    1920;
+
+// A.2.1. FONT 31px - 24px --------------------------------
+
+$fnt-32-min-xs: 22;
+$fnt-32-max-md: 32;
+$fnt-32-max:    32;
+
+$lh-32-min-xs: 1;
+$lh-32-max-md: 1;
+$lh-32-max:    1;
+
+.fnt-32, .fnt-32 * {
+  font-size: calc( #{$fnt-32-min-xs}px + (#{$fnt-32-max-md} - #{$fnt-32-min-xs}) * ((100vw - #{$view-min-xs}px) / (#{$view-max-md} - #{$view-min-xs})));
+  line-height: calc( #{$lh-32-min-xs}px + (#{$lh-32-max-md} - #{$lh-32-min-xs}) * ((100vw - #{$view-min-xs}px) / (#{$view-max-md} - #{$view-min-xs})));
+}
+
+// A.2.1. END ---------------------------------------------
 
 $h1-min-xs:    22;
 $h1-max-xs:    26;
