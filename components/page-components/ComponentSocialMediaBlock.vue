@@ -41,9 +41,9 @@ export default {
   .o-profile-list {
     .o-item-profile {
       .a-card-link {
-        img { filter: sepia(1); opacity: 0.4; transition: 0.3s; }
+        img { filter: grayscale(1); opacity: 0.4; transition: 0.3s; }
         &:hover {
-          img { filter: sepia(0); opacity: 1; transition: 0.3s; }
+          img { filter: grayscale(0); opacity: 1; transition: 0.3s; }
         }
       }
       .m-card-image { padding: 25px;
