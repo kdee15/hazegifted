@@ -1,0 +1,33 @@
+{
+  "name": "safe-eyes",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@blokwise/dynamic": "^1.0.5",
+    "@contentful/rich-text-html-renderer": "^14.1.2",
+    "contentful": "^8.1.7",
+    "core-js": "^3.8.3",
+    "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@vue/test-utils": "^1.1.2",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^26.6.3",
+    "dotenv": "^8.2.0",
+    "fibers": "^5.0.0",
+    "jest": "^26.6.3",
+    "normalize.css": "^8.0.1",
+    "nuxt-purgecss": "^1.0.0",
+    "sass": "^1.32.7",
+    "sass-loader": "^10.1.1",
+    "vue-jest": "^3.0.4"
+  }
+}
