@@ -46,7 +46,7 @@ export default {
           img { filter: grayscale(0); opacity: 1; transition: 0.3s; }
         }
       }
-      .m-card-image { padding: 24px;
+      .m-card-image { padding: 25px;
       }
       .m-card-body { display: none; }
     }
