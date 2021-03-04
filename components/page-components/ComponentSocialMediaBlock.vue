@@ -6,7 +6,7 @@
       </div>
       <div v-if="component.fields.cards.length > 0" class="row no-gutters o-profile-list">
           <div
-            class="o-item-profile col-4 col-md-2"
+            class="o-item-profile"
             v-for="card in component.fields.cards"
             :key="card.sys.id"
           >
@@ -37,11 +37,11 @@ export default {
 
   h2 { color: black; align-self: center; text-align: center; width: 100%; margin-bottom: 30px; }
 
-// A.2. PROFILE LIST ------------------------------------
-  .o-profile-list {
-    .o-item-profile {
-      .a-card-link {
-        img { filter: grayscale(1); opacity: 0.4; transition: 0.3s; }
+  // A.2. PROFILE LIST ------------------------------------
+  .o-profile-list { display: flex; flex-wrap: wrap; justify-content: center;
+    .o-item-profile { flex: 1 1 50%;
+      .a-card-link { display: block;
+        img { filter: grayscale(1); opacity: 0.4; transition: 0.3s; margin: 0 auto; display: block; }
         &:hover {
           img { filter: grayscale(0); opacity: 1; transition: 0.3s; }
         }
@@ -51,7 +51,37 @@ export default {
       .m-card-body { display: none; }
     }
   }
-// A.2. END ---------------------------------------------
+  // A.2. END ---------------------------------------------
+
+  // B. MEDIA QUERIES -------------------------------------
+
+  // B.1. GRACEFUL DEGRADATION -------------
+
+
+  // B.1. END ------------------------------
+
+  // B.2. PROGRESSIVE ENHANCEMENT ----------
+  // 768px up
+  @media ($sm-up) {}
+
+  // 991px up
+  @media ($md-up) {
+
+    .o-profile-list {
+      .o-item-profile { flex: 1 1 25%; }
+    }
+
+  }
+
+  // 1200px up
+  @media ($lg-up) {}
+
+  // 1440px up
+  @media ($xlg-up) {}
+
+  // B.2. END ------------------------------
+
+  // B. END -----------------------------------------------
 
 }
 
@@ -88,18 +118,16 @@ export default {
 
   // B.2. PROGRESSIVE ENHANCEMENT ----------
   // 768px up
-  @media ($sm-up) {  }
+  @media ($sm-up) {}
 
   // 991px up
-  @media ($md-up) {
-    h1 { color: green; }
-  }
+  @media ($md-up) {}
 
   // 1200px up
-  @media ($lg-up) {  }
+  @media ($lg-up) {}
 
   // 1440px up
-  @media ($xlg-up) {  }
+  @media ($xlg-up) {}
 
   // B.2. END ------------------------------
 
