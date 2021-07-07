@@ -5,7 +5,7 @@
         <h2 class="col a-block-title">{{ component.fields.title }}</h2>
       </div>
       <div class="row">
-        <figure class="o-block-image col-12 col-md-5 d-none d-md-flex">
+        <figure class="o-block-image col-12 col-md-5">
           <img
             :src="component.fields.media.fields.file.url"
             alt="Your alt text here"
@@ -71,6 +71,7 @@ export default {
 
   h2 { color: white; text-shadow: 0 0 5px black; align-self: center; text-align: center; width: 100%; margin-bottom: 30px; }
 
+  .o-block-image { display: none; }
   .o-block-media {
     iframe { width: 100% !important; height: 100% !important; min-height: 350px; }
   }
@@ -85,7 +86,11 @@ export default {
 
   // B.2. PROGRESSIVE ENHANCEMENT ----------
   // 768px up
-  @media ($sm-up) {}
+  @media ($sm-up) {
+
+    .o-block-image { display: flex; align-items: flex-start; }
+
+  }
 
   // 991px up
   @media ($md-up) {}
