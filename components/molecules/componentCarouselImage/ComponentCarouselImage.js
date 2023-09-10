@@ -6,7 +6,7 @@ function ComponentCarouselImage({ item }) {
     <figure
       className={classes.aCarouselImage}
       style={{
-        backgroundImage: `url(${item.url})`,
+        backgroundImage: `url(http:${item.fields.file.url})`,
       }}
     ></figure>
   );

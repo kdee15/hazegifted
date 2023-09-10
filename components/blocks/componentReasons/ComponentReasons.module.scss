@@ -1,46 +1,58 @@
 // COMPONENT [ HERO BLOCK ] ###########################################################################################
 @import "scss/.base/module-index";
 
-.oHeroBlock {
+.oReasonsBlock {
   // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
 
-  &.oHome {
-    .mLogo {
-      width: 80%;
-      max-width: 400px;
-      margin: 10vh auto 15vh;
-    }
+  margin: 0 0 100px;
 
-    .introImage {
+  .oRight {
+    background-color: #383028;
+    padding: 0 0 50px;
+  }
+
+  .titleWrapper {
+    display: inline-block;
+    position: relative;
+
+    .aPreTitle {
+      display: block;
+      font-family: "Alex Brush", cursive;
+    }
+    .aTitle {
+      display: block;
+      font-family: "Cormorant", serif;
+      font-weight: 500;
+    }
+    .aSubTitle {
+      display: block;
+      text-align: right;
+      font-family: "Alex Brush", cursive;
+    }
+  }
+  .mImage {
+    &.floatRight {
+      float: right;
+      width: 30%;
+      margin: -20px 0 50px 50px;
+    }
+    &.bgImage {
+      aspect-ratio: 4/3;
+      background-size: cover;
+    }
+  }
+  .bodyWrapper {
+    &.rightBlock {
       padding: 0 50px;
     }
   }
 
-  &.oPage {
-    max-height: 600px;
-    position: relative;
-    overflow: hidden;
-    .oContentBlock {
-      position: relative;
-      padding: 100px 0;
-      z-index: 10;
-      .aTitle {
-        display: block;
-        text-shadow: 0 0 15px black;
-      }
-    }
-    .mLogo {
-      width: 10%;
-      max-width: 400px;
-      margin: 10vh auto 15vh;
-    }
+  .mBodyText {
+    margin-bottom: 50px;
+  }
 
-    .introImage {
-      padding: 0;
-    }
-    .introImage {
-      @include position(absolute, 0);
-    }
+  .aHeader {
+    margin: 60px auto 20px;
   }
 
   // A. END +++++++++++++++++++++++++++++++++++++++++++++++
@@ -55,9 +67,6 @@
   // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++
 
   @media ($md-up) {
-    .mLogo {
-      margin: 25vh auto 15vh;
-    }
   }
 
   // C. END +++++++++++++++++++++++++++++++++++++++++++++++
@@ -65,6 +74,17 @@
   // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++
 
   @media ($lg-up) {
+    .titleWrapper {
+      .aSubTitle {
+        margin-top: -20px;
+      }
+    }
+    .oLeft {
+      min-width: 66%;
+    }
+    .oRight {
+      max-width: 33%;
+    }
   }
 
   // D. END +++++++++++++++++++++++++++++++++++++++++++++++
@@ -72,6 +92,11 @@
   // E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++
 
   @media ($xl-up) {
+    .titleWrapper {
+      .aSubTitle {
+        transform: translateX(50%);
+      }
+    }
   }
 
   // E. END +++++++++++++++++++++++++++++++++++++++++++++++

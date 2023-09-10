@@ -1,31 +1,18 @@
-// COMPONENT [ TEXT IMAGE BLOCK ] #####################################################################################
-
+// COMPONENT [ FOOTER ] ###############################################################################################
 @import "scss/.base/module-index";
 
-.oCard {
+.oServicesBlock {
   // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
 
-  padding: 50px 0 0;
-  position: relative;
-
-  .oCardImage {
-    aspect-ratio: 1/1;
-    position: relative;
-    background-position: center center;
-    background-size: cover;
-    margin-bottom: 40px;
-  }
-
-  .aTitle {
-    margin-bottom: 30px;
+  .aBlockTitle {
+    margin: 50px auto 20px;
     text-align: center;
   }
-  .mText {
+  .aBlockDesc {
+    margin: 0 auto 50px;
     text-align: center;
-    p {
-      margin-bottom: 6px;
-    }
   }
+
   // A. END +++++++++++++++++++++++++++++++++++++++++++++++
 
   // B. GRACEFUL DEGRADATION ++++++++++++++++++++++++++++++
@@ -44,14 +31,14 @@
 
   // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++
 
-  @media ($md-up) {
+  @media ($lg-up) {
   }
 
   // D. END +++++++++++++++++++++++++++++++++++++++++++++++
 
   // E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++
 
-  @media ($lg-up) {
+  @media ($xl-up) {
   }
 
   // E. END +++++++++++++++++++++++++++++++++++++++++++++++

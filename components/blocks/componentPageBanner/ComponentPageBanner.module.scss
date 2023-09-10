@@ -1,31 +1,26 @@
-// COMPONENT [ TEXT IMAGE BLOCK ] #####################################################################################
-
+// COMPONENT [ HERO BLOCK ] ###########################################################################################
 @import "scss/.base/module-index";
 
-.oCard {
+.oHeroBlock {
   // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-  padding: 50px 0 0;
-  position: relative;
-
-  .oCardImage {
-    aspect-ratio: 1/1;
+  .oContainer {
     position: relative;
-    background-position: center center;
-    background-size: cover;
-    margin-bottom: 40px;
+    overflow: auto;
+    max-height: 300px;
+    min-height: 150px;
+    text-align: right;
   }
 
-  .aTitle {
-    margin-bottom: 30px;
-    text-align: center;
+  .mImage {
+    display: block;
+    max-width: 200px;
+    margin: 50px 0 50px auto;
   }
-  .mText {
-    text-align: center;
-    p {
-      margin-bottom: 6px;
-    }
-  }
+
   // A. END +++++++++++++++++++++++++++++++++++++++++++++++
 
   // B. GRACEFUL DEGRADATION ++++++++++++++++++++++++++++++
@@ -44,14 +39,19 @@
 
   // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++
 
-  @media ($md-up) {
+  @media ($lg-up) {
+    .mImage {
+      display: block;
+      max-width: 300px;
+      margin: 50px 0 50px auto;
+    }
   }
 
   // D. END +++++++++++++++++++++++++++++++++++++++++++++++
 
   // E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++
 
-  @media ($lg-up) {
+  @media ($xl-up) {
   }
 
   // E. END +++++++++++++++++++++++++++++++++++++++++++++++
