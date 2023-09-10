@@ -1,9 +1,9 @@
 const contentful = require("contentful");
 
 module.exports = {
-  images: {
-    loader: "imgix",
-    path: "https://epokothweni.imgix.net",
-    domains: ["images.ctfassets.net"],
-  },
+  // images: {
+  //   loader: "imgix",
+  //   path: "https://kdee.imgix.net",
+  //   domains: ["images.ctfassets.net"],
+  // },
 };
