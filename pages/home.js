@@ -1,7 +1,12 @@
 import { createClient } from "contentful";
+import ComponentHeroBanner from "../components/blocks/componentHeroBanner/ComponentHeroBanner";
+import ComponentProjectList from "../components/blocks/componentProjectList/ComponentProjectList";
+import ComponentSkillsMatrix from "../components/blocks/componentSkillsMatrix/ComponentSkillsMatrix";
+import ComponentBodyCopy from "../components/organisms/componentBodyCopy/ComponentBodyCopy";
+import ComponentTextList from "../components/organisms/componentTextList/ComponentTextList";
 const { C_SPACE_ID, C_DELIVERY_KEY } = require("../helpers/contentful-config");
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
   const client = createClient({
     space: C_SPACE_ID,
     accessToken: C_DELIVERY_KEY,
@@ -24,11 +29,11 @@ export async function getStaticProps() {
 }
 
 export default function Home({ Page }) {
-  console.log("page", Page);
+  console.log("Page", Page);
+
   return (
     <div className="anchor" id="top">
-      <h1>HazeGifted.co.za</h1>
-      <p>coming soon ...</p>
+      <h1>haze gifted</h1>
     </div>
   );
 }

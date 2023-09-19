@@ -6,9 +6,13 @@
 
   background-color: $grey-02;
   margin-top: 80px;
-  .mLogo {
-    max-width: 200px;
-    margin: 0 auto 50px;
+  .aFooterLogo {
+    max-width: 300px;
+    margin: 0 auto;
+    .aImage {
+      width: 100% !important;
+      height: 100% !important;
+    }
   }
   .oIconList {
     list-style-type: none;
@@ -40,10 +44,6 @@
         color: #e2e2e2;
       }
     }
-    .aLink {
-      width: 100%;
-      text-align: left;
-    }
   }
 
   .mQRCode {
@@ -72,9 +72,6 @@
   // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++
 
   @media ($md-up) {
-    .mLogo {
-      margin: 0 auto;
-    }
   }
 
   // C. END +++++++++++++++++++++++++++++++++++++++++++++++

@@ -32,26 +32,12 @@ export default function Nav() {
           </li>
           <li className={classes.navLink}>
             <a className={classes.aLink} href="#tania" onClick={handleToggle}>
-              Corporate & Communications
+              Tania Molteno
             </a>
           </li>
           <li className={classes.navLink}>
             <a className={classes.aLink} href="#adele" onClick={handleToggle}>
-              Business Licenses
-            </a>
-          </li>
-          <li className={classes.navLink}>
-            <a className={classes.aLink} href="#reasons" onClick={handleToggle}>
-              Liquor Licenses
-            </a>
-          </li>
-          <li className={classes.navLink}>
-            <a
-              className={classes.aLink}
-              href="#offerings"
-              onClick={handleToggle}
-            >
-              Labour
+              Adele Segers
             </a>
           </li>
           <li className={classes.navLink}>
@@ -60,7 +46,25 @@ export default function Nav() {
               href="#management"
               onClick={handleToggle}
             >
-              Standard Agreements
+              Talent Management Solutions
+            </a>
+          </li>
+          <li className={classes.navLink}>
+            <a
+              className={classes.aLink}
+              href="#consulting"
+              onClick={handleToggle}
+            >
+              Labour Consulting
+            </a>
+          </li>
+          <li className={classes.navLink}>
+            <a
+              className={classes.aLink}
+              href="#training"
+              onClick={handleToggle}
+            >
+              Training
             </a>
           </li>
         </ul>
