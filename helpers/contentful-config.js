@@ -1,5 +1,5 @@
-const C_SPACE_ID = "1r18lm02x41z";
-const C_DELIVERY_KEY = "q0IFDLK-gHUOdk1N7QpL4Zmqjk2kgZO0jD8XseRVMfM";
+const C_SPACE_ID = "xe3lbyffjrgo";
+const C_DELIVERY_KEY = "Fx4lAfG4D2XlHoF36d3uLPW3KAC0vUmX0tK_K8xk4rE";
 const C_GRAPHQL_URL = `https://graphql.contentful.com/content/v1/spaces/${C_SPACE_ID}/environments/master`;
 
 module.exports = {
